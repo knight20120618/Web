@@ -1,0 +1,200 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 33px;
+    font-weight: bold;
+}
+
+#BTN {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#BTN:hover {
+    background-color: aqua;
+}
+
+#BTN:active {
+    background-color: aqua;
+}
+
+#alert,
+#alert0,
+#alert1,
+#alert2,
+#alert3,
+#alert4,
+#alert5,
+#alert6,
+#alert7 {
+    display: none;
+    position: fixed;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: burlywood;
+    background-color: brown;
+}
+
+#DIV {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#file {
+    flex: 1;
+    border-radius: 33px;
+    margin: 0%;
+    border: 3px dotted blueviolet;
+    padding: 33px 33px;
+}
+
+#list {
+    flex: 1;
+}
+
+#upload {
+    height: 44px;
+    font-size: 27px;
+    border-radius: 33px;
+}
+
+#upload:hover {
+    background-color: #bbb;
+}
+
+#upload:active {
+    background-color: #bbb;
+}
+
+#photo {
+    /* preview images */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#select {
+    /* color pick */
+    height: 44px;
+    font-size: 17px;
+    border-radius: 33px;
+    text-align: center;
+    flex: 1;
+}
+
+#COLOR {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#color {
+    height: 44px;
+    font-size: 27px;
+    border-radius: 33px;
+}
+
+#color:hover {
+    background-color: #bbb;
+}
+
+#color:active {
+    background-color: #bbb;
+}
+
+#width-height {
+    /* resolution pick */
+    height: 44px;
+    font-size: 27px;
+    border-radius: 33px;
+    flex: 1;
+    text-align: center;
+}
+
+#RESOLUTION {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#resolution {
+    height: 44px;
+    font-size: 27px;
+    border-radius: 33px;
+}
+
+#resolution:hover {
+    background-color: #bbb;
+}
+
+#resolution:active {
+    background-color: #bbb;
+}
+
+#DOWNLOAD {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#download {
+    height: 44px;
+    font-size: 27px;
+    border-radius: 33px;
+}
+
+#download:hover {
+    background-color: #bbb;
+}
+
+#download:active {
+    background-color: #bbb;
+}
+
+.loader-wrapper {
+    /* animation */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.loader {
+    /* animation */
+    border: 4px solid white;
+    border-top: 4px solid aqua;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    animation: spin 2s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    /* animation */
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"><!-- ICON -->
+    <link rel="stylesheet" type="text/css" href="/index.css">
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <br><br><br>
+    <h1>
+        <%= title %><!-- render -->
+    </h1>
+    <button id="BTN">回主頁</button>
+    <br><br><br>
+    <div id="DIV">
+        <div id="list">
+            <strong id="str">上傳清單</strong>
+        </div>
+        <input type="file" accept=".bmp, .png, .jpg, .jpeg" multiple id="file">
+        <div style="flex: 1;">
+            <input type="button" value="圖檔上傳" id="upload">
+        </div>
+    </div>
+    <div style="display: flex;">
+        <div id="photo"></div>
+        <select name="width-height" id="width-height">
+            <option selected disabled>請選擇解析度</option>
+            <option value="3200*1800">3200*1800</option>
+            <option value="1800*3200">1800*3200</option>
+        </select>
+        <div id="RESOLUTION">
+            <input type="button" value="轉檔" id="resolution">
+        </div>
+        <select name="select" id="select">
+            <option selected disabled>請選擇色盤</option>
+            <option value="黑白紅黃">黑白紅黃</option>
+            <option value="六色">六色</option>
+        </select>
+        <div id="COLOR">
+            <input type="button" value="開始抖色" id="color">
+        </div>
+        <div id="DOWNLOAD">
+            <input type="button" value="圖檔下載" id="download">
+        </div>
+    </div>
+    <br><br><br>
+    <div class="loader-wrapper" id="loader-wrapper">
+        <div class="loader" id="loader"></div><!-- animation -->
+    </div>
+    <br><br><br>
+    <div id="alert"><!-- alert word -->
+        <h2>請選擇.bmp|.png|.jpg|.jpeg</h2>
+    </div>
+    <div id="alert0">
+        <h1>其中含有相同檔案</h1>
+    </div>
+    <div id="alert1">
+        <h1>請選擇檔案</h1>
+    </div>
+    <div id="alert2">
+        <h1>抖色預計30秒</h1>
+    </div>
+    <div id="alert3">
+        <h1>抖色成功</h1>
+    </div>
+    <div id="alert4">
+        <h1>下載預計30秒</h1>
+    </div>
+    <div id="alert5">
+        <h1>開始轉檔</h1>
+    </div>
+    <div id="alert6">
+        <h1>請選擇解析度</h1>
+    </div>
+    <div id="alert7">
+        <h1>請選擇色盤</h1>
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>
